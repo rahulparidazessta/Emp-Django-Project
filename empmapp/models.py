@@ -13,7 +13,6 @@ class Employee(models.Model):
     department = models.ForeignKey('Department', on_delete=models.CASCADE,related_name='employees') #models.foreignkey refers to many_to_one relationship
     position = models.CharField(max_length=100)
     salary = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField(storage=S3MediaStorage(),blank=True,null=True)
 
 
     def __str__(self) :
@@ -35,7 +34,6 @@ class AttendenceDetails(models.Model):
     check_in_time = models.TimeField()
     check_out_timee = models.TimeField()
     Present = models.BooleanField()
-    # present = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.employee.Name} - {self.date}"
