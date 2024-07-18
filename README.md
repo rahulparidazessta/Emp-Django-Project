@@ -37,5 +37,9 @@ docker pull rahulparida/empsystem:v1
 ```
 2. Run the Docker Container
 ```bash
-docker run -p 8000:8000 rahulparida/empsystem
+docker run -p 8000:8000 rahulparida/empsystem:v1
 ```
+Username: admin
+Password: password
+
+This repository is currently in development. If you would like to contribute, please feel free to do so.
