@@ -37,8 +37,9 @@ docker pull rahulparida/empsystem:v1
 ```
 2. Run the Docker Container
 ```bash
-docker run -p 8000:8000 rahulparida/empsystem:v1
+docker run -p 8000:8000 -d rahulparida/empsystem:v1
 ```
+Then you have to go to the localhost:8000 and boom
 Username: admin
 Password: password
 
